@@ -5,9 +5,9 @@
 
 
 .text
-.global _main
+.global _start
 
-    _main:
+    _start:
         call prn
         mov $1, %edx
         xor %ebx, %ebx
