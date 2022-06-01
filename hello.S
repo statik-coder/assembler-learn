@@ -1,6 +1,6 @@
 .data
     msg:
-        .ascii "Hello world!"
+        .ascii "Hello world!\n"
         .set len, . - msg
 
 
@@ -9,7 +9,7 @@
 
     _start:
         call prn
-        mov $1, %edx
+        mov $1, %eax
         xor %ebx, %ebx
         int $0x80
     
